@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 
+
 urlpatterns = patterns('lists.views',
     url(r'^$', 'home'),
     url(r'^(?P<user_name>[\w\s\d]+)/$', 'view_list', {'list_name': 'inbox'}),

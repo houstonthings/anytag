@@ -50,16 +50,16 @@ $(document).ready(function() {
 						<input type="checkbox" {% if item.complete %} checked="checked" {% endif %} name="complete" id="{{ item.pk }}">
 						<span {% if item.complete %}  class="complete" {% endif %}>{{ item }}</span>
 						<div class="item-actions">
-							<i class="icon-trash delete-item"></i>
-							<i class="icon-move move-item"></i>
+							<span class="glyphicon glyphicon-trash"></span>
+							<span class="glyphicon glyphicon-move"></i>
 						</div>
 					</label>
 				{% endfor %}
 				</div>
 			</div>
 		</div>
-		<div id="empty_message" class="alert" style="display:none;">
-  			<a class="close" data-dismiss="alert">×</a>
+		<div id="empty_message" class="alert alert-warning alert-dismissable" style="display:none;">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   			<strong>Note</strong> Once all items on a list are deleted, the list is deleted as well.  Adding a new item will add the list back.
 		</div>
 		<div><input type="button" id="clear_list" value="clear list" class="btn btn-warning"></div>
