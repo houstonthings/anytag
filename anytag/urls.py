@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^blog/', include('blog.urls')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^api/', include(listapi.urls, namespace='list_api')),
+    #url(r'^api/', include(listapi.urls, namespace='list_api')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', lists.urls, name='home'),
 )
