@@ -23,28 +23,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/core/handlers/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="0" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="2779" max-vertical-offset="4440">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lists/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1575">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="33" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1095">
+            <state line="25" column="23" selection-start="662" selection-end="662" vertical-scroll-proportion="-10.291667" vertical-offset="128" max-vertical-offset="1110">
+              <folding>
+                <element signature="e#2096#2117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/db/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="9" selection-start="1364" selection-end="1365" vertical-scroll-proportion="-17.884615" vertical-offset="0" max-vertical-offset="585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/db/models/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1008" column="0" selection-start="44607" selection-end="44607" vertical-scroll-proportion="0.0" vertical-offset="14912" max-vertical-offset="15720">
               <folding />
             </state>
           </provider>
@@ -53,7 +55,25 @@
       <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anytag/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="351" selection-end="351" vertical-scroll-proportion="0.33870968" vertical-offset="0" max-vertical-offset="620">
+            <state line="18" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.43269232" vertical-offset="0" max-vertical-offset="624">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functional.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/utils/functional.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="6540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/template/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="794" column="0" selection-start="29291" selection-end="29291" vertical-scroll-proportion="0.0" vertical-offset="11702" max-vertical-offset="20115">
               <folding />
             </state>
           </provider>
@@ -64,26 +84,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="40" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="540">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/anytag/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="12" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1680">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/listapi/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1110">
-              <folding>
-                <marker date="1398176438000" expanded="true" signature="0:163" placeholder="import ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +129,6 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/js/writenow.js" />
         <option value="$PROJECT_DIR$/lists/views.py" />
-        <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/lists/models.py" />
         <option value="$PROJECT_DIR$/lists/serializers.py" />
         <option value="$PROJECT_DIR$/lists/urls.py" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/anytag/settings.py" />
         <option value="$PROJECT_DIR$/restapi/serializers.py" />
+        <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/anytag/urls.py" />
       </list>
     </option>
@@ -146,7 +146,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1174" />
+    <option name="height" value="1178" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -519,7 +519,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1178" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -528,7 +528,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39944392" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39796862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -583,33 +583,16 @@
           <line>37</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lists/models.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/db/models/loading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.0" vertical-offset="1549" max-vertical-offset="4995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anytag/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lists/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="870" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/goodbye.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
@@ -786,11 +769,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lists/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="39" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="199" column="0" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="2779" max-vertical-offset="4440">
@@ -805,18 +783,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/listapi/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
           <folding>
-            <marker date="1398176438000" expanded="true" signature="0:163" placeholder="import ..." />
+            <marker date="1398176438000" expanded="true" signature="-1:-1" placeholder="import ..." />
           </folding>
         </state>
       </provider>
@@ -866,9 +837,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1008" column="0" selection-start="44607" selection-end="44607" vertical-scroll-proportion="0.0" vertical-offset="14912" max-vertical-offset="15720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/utils/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="6540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/db/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="9" selection-start="1364" selection-end="1365" vertical-scroll-proportion="-17.884615" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/anytag/lib/python2.7/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="794" column="0" selection-start="29291" selection-end="29291" vertical-scroll-proportion="0.0" vertical-offset="11702" max-vertical-offset="20115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="25" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="662" selection-end="662" vertical-scroll-proportion="-10.291667" vertical-offset="128" max-vertical-offset="1110">
+          <folding>
+            <element signature="e#2096#2117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/anytag/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="351" selection-end="351" vertical-scroll-proportion="0.33870968" vertical-offset="0" max-vertical-offset="620">
+        <state line="18" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.43269232" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>

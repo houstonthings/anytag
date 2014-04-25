@@ -18,21 +18,21 @@ $(document).ready(function() {
 	<div class="row-fluid">
 	<div class="span2">
 		{% if mobile %}
-			<select class="span2" id="choose_list">
-				<option>Change to...</option>
-			{% for user_list in user_lists %}
-				<option value="{{ user_list.get_absolute_url }}">{{ user_list }}</option>
-			{% endfor %}
-			</select>
+{#			<select class="span2" id="choose_list">#}
+{#				<option>Change to...</option>#}
+{#			{% for user_list in user_lists %}#}
+{#				<option value="{{ user_list.get_absolute_url }}">{{ user_list }}</option>#}
+{#			{% endfor %}#}
+{#			</select>#}
 		{% else %}
-		<div class="sidebar-nav">
-			<ul class="nav nav-list">
-				{% for user_list in user_lists %}
-					<li><a href="{{ user_list.get_absolute_url }}">{{ user_list }}<span class="badge badge-success">{{ user_list.incomplete_items }}</span></a></li>
-				{% endfor %}
-				<li><input type="text" placeholder="new list" id="new_list" class="span2"></li>
-			</ul>
-		</div>
+{#		<div class="sidebar-nav">#}
+{#			<ul class="nav nav-list">#}
+{#				{% for user_list in user_lists %}#}
+{#					<li><a href="{{ user_list.get_absolute_url }}">{{ user_list }}<span class="badge badge-success">{{ user_list.incomplete_items }}</span></a></li>#}
+{#				{% endfor %}#}
+{#				<li><input type="text" placeholder="new list" id="new_list" class="span2"></li>#}
+{#			</ul>#}
+{#		</div>#}
 		{% endif %}
 	</div>
 	<div class="span6">
@@ -49,10 +49,10 @@ $(document).ready(function() {
 					<label class="checkbox" data-order="{{ item.order }}" {% if item.complete %}  class="complete" {% endif %}>
 						<input type="checkbox" {% if item.complete %} checked="checked" {% endif %} name="complete" id="{{ item.pk }}">
 						<span {% if item.complete %}  class="complete" {% endif %}>{{ item }}</span>
-						<div class="item-actions">
-							<span class="glyphicon glyphicon-trash"></span>
-							<span class="glyphicon glyphicon-move"></i>
-						</div>
+{#						<div class="item-actions">#}
+{#							<span class="glyphicon glyphicon-trash"></span>#}
+{#							<span class="glyphicon glyphicon-move"></i>#}
+{#						</div>#}
 					</label>
 				{% endfor %}
 				</div>
@@ -63,6 +63,7 @@ $(document).ready(function() {
   			<strong>Note</strong> Once all items on a list are deleted, the list is deleted as well.  Adding a new item will add the list back.
 		</div>
 		<div><input type="button" id="clear_list" value="clear list" class="btn btn-warning"></div>
+        <div><input type="button" id="delete_checked_items" value="delete completed items" class="btn btn-warning"></div>
 	</div>
 </div>
 {% endblock %}
