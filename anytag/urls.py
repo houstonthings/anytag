@@ -1,18 +1,20 @@
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
-import listapi
-import lists
+from items.views import ItemTypeViewSet, ItemInstanceViewSet
+from rest_framework import routers
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
-   url(r'^', include('lists.urls')),
+router = routers.DefaultRouter()
+router.register(r'items', ItemInstanceViewSet)
+router.register(r'types', ItemTypeViewSet)
 
-    # Examples:
-    # url(r'^blog/', include('blog.urls')),
+urlpatterns = patterns('',
+    url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    #url(r'^api/', include(listapi.urls, namespace='list_api')),
+
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('lists.urls')),
     #url(r'^$', lists.urls, name='home'),
 )

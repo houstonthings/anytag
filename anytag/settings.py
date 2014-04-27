@@ -40,10 +40,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'items',
     'lists',
-    'listapi',
     'south',
     'rest_framework',
+    'debug_toolbar'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -103,5 +104,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '~/dev/projects/anytag/static',
+    #'~/dev/projects/anytag/static',
 )

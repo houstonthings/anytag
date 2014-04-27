@@ -1,0 +1,16 @@
+[
+  {
+    "model": "items.itemtype",
+    "pk": 1,
+    "fields": {
+      "name": "collection"
+    }
+  },
+  {
+    "model": "items.itemtype",
+    "pk": 2,
+    "fields": {
+      "name": "string"
+    }
+  }
+]

@@ -1,9 +1,8 @@
-from django.conf.urls import patterns, include, url
-
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('lists.views',
     url(r'^$', 'home'),
-    url(r'^(?P<user_name>[\w\s\d]+)/$', 'view_list', {'list_name': 'inbox'}),
+    #url(r'^(?P<user_name>[\w\s\d]+)/$', 'view_list', {'list_name': 'inbox'}),
     url(r'^(?P<user_name>[\w\s\d]+)/add/(?P<new_item>.+)$', 'add_item', {'list_name': 'inbox'}),
     url(r'^(?P<user_name>[\w\s\d]+)/move/(?P<pk>[\w\s\d]+)/$', 'move_item'),
     url(r'^(?P<user_name>[\w\s\d]+)/update/(?P<pk>[\w\s\d]+)/$', 'update_item', {'list_name': 'inbox'}),

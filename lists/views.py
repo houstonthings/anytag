@@ -1,5 +1,5 @@
 import json
-from models import *
+from .models import Item, List
 from django.shortcuts import render_to_response
 from django.contrib.auth.models import User
 from django.template import RequestContext
@@ -12,7 +12,6 @@ def home(request):
         None,
         context_instance=RequestContext(request)
     )
-
 
 def view_list(request, user_name, list_name):
 #    import pdb; pdb.set_trace()

@@ -1,0 +1,46 @@
+[
+  {
+    "model": "items.iteminstance",
+    "pk": 1,
+    "fields": {
+        "value": "lists",
+        "item_type": 1
+    }
+  },
+  {
+    "model": "items.iteminstance",
+    "pk": 2,
+    "fields": {
+        "value": "demo list 1",
+        "item_type": 1,
+        "parent": 1
+    }
+  },
+  {
+    "model": "items.iteminstance",
+    "pk": 3,
+    "fields": {
+        "value": "demo item 1",
+        "item_type": 2,
+        "parent": 2
+    }
+  },
+  {
+    "model": "items.iteminstance",
+    "pk": 4,
+    "fields": {
+        "value": "demo item 2",
+        "item_type": 2,
+        "parent": 2
+    }
+  },
+  {
+    "model": "items.iteminstance",
+    "pk": 5,
+    "fields": {
+        "value": "demo list 2",
+        "item_type": 1,
+        "parent": 1
+    }
+  }
+]
