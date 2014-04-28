@@ -1,3 +1,4 @@
+from django.views.generic.base import TemplateView
 from rest_framework.generics import ListCreateAPIView
 from rest_framework.generics import RetrieveUpdateDestroyAPIView
 from .models import ItemInstance, ItemType
@@ -20,3 +21,5 @@ class ItemInstanceReadUpdateDeleteView(RetrieveUpdateDestroyAPIView):
     model = ItemInstance
 
 
+class HomePage(TemplateView):
+    template_name = "home.html"

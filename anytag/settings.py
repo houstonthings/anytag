@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'lists',
     'south',
     'rest_framework',
+    'djangular',
     'debug_toolbar'
 )
 
