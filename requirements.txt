@@ -4,3 +4,4 @@ django-debug-toolbar==1.2
 djangorestframework==2.3.13
 sqlparse==0.1.11
 wsgiref==0.1.2
+djangular==0.2.7
