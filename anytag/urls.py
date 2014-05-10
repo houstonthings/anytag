@@ -19,3 +19,13 @@ urlpatterns = patterns('',
     url(r'^', include('lists.urls')),
     #url(r'^$', lists.urls, name='home'),
 )
+
+
+from django.conf import settings
+from django.conf.urls import include, patterns, url
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += patterns('',
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    )
