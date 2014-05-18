@@ -1,9 +1,9 @@
-var app = angular.module('ItemListApp');
+app = angular.module('example.app.static', []);
 
-app.config(function($httpProvider) {
-    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-});
-
-app.controller("ItemListController", [$scope, function($scope){
-    $scope.list_name = "List 1";
+app.controller('AppController', ['$scope', '$http', function($scope, $http){
+    $http.get('/api/items').then(function(result){
+        _.each(result.data, function(item){
+            $scope.items.push(item);
+        });
+    });
 }]);

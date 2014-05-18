@@ -7,11 +7,11 @@ from rest_framework import routers
 admin.autodiscover()
 
 router = routers.DefaultRouter()
-router.register(r'api/items', ItemInstanceViewSet)
-router.register(r'api/types', ItemTypeViewSet)
+router.register(r'items', ItemInstanceViewSet)
+router.register(r'types', ItemTypeViewSet)
 
 urlpatterns = patterns('',
-    url(r'^', include(router.urls)),
+    url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     url(r'^admin/', include(admin.site.urls)),

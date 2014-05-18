@@ -6,9 +6,16 @@ from django.template import RequestContext
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
+#
+# def home(request):
+#     return render_to_response("index.html",
+#         None,
+#         context_instance=RequestContext(request)
+#     )
+#
 
 def home(request):
-    return render_to_response("index.html",
+    return render_to_response("home.html",
         None,
         context_instance=RequestContext(request)
     )
