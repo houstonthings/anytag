@@ -7,10 +7,11 @@
 <body ng-app="{% block ng_app %}anytag.app.static{% endblock %}">
 <div class="content" ng-controller="{% block ng_controller %}AppController{% endblock %}">{% block content %}
 {% verbatim %}
-    List to view: <select ng-model="listparent" ng-options="item.value for item in items | filter:{parent:1}">
+    <select ng-model="tag" ng-options="tag.title for item in tags">
     </select>
-    <h2>{{ listparent.value }} Items</h2>
-    <div class="panel" ng-repeat="item in items | filter:{parent:listparent.id}">
+    <select ng-model="tagvalue" ng-options="tagvalue.value for tagvalue in tagvalues | filter:{tag:tag.id}">
+    </select>
+    <div class="panel" ng-repeat="item in items | filter:{id:tagvalue.item}">
          <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox">
