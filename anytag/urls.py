@@ -1,14 +1,15 @@
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
-from items.views import ItemTypeViewSet, ItemInstanceViewSet, HomePage
+from items.views import ItemInstanceViewSet, HomePage, ItemTagViewSet, ItemTagValueViewSet
 from rest_framework import routers
 
 admin.autodiscover()
 
 router = routers.DefaultRouter()
 router.register(r'items', ItemInstanceViewSet)
-router.register(r'types', ItemTypeViewSet)
+router.register(r'tags', ItemTagViewSet)
+router.register(r'tagvalues', ItemTagValueViewSet)
 
 urlpatterns = patterns('',
     url(r'^api/', include(router.urls)),

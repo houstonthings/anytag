@@ -189,7 +189,6 @@ DJANGO_APPS = (
     'items',
     'lists',
     'rest_framework',
-    'djangular',
     # Useful template tags:
     # 'django.contrib.humanize',
 

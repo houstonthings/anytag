@@ -1,60 +1,94 @@
 [
-  {
-    "model": "items.itemtype",
-    "pk": 1,
-    "fields": {
-      "name": "collection"
+    {
+        "model": "items.itemtag",
+        "pk": 1,
+        "fields": {
+            "title": "list"
+        }
+    },
+    {
+        "model": "items.itemtag",
+        "pk": 2,
+        "fields": {
+            "title": "store"
+        }
+    },
+    {
+        "model": "items.iteminstance",
+        "pk": 1,
+        "fields": {
+            "value": "security cameras"
+        }
+    },
+    {
+        "model": "items.iteminstance",
+        "pk": 2,
+        "fields": {
+            "value": "milk"
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 1,
+        "fields": {
+            "tag": 1,
+            "value": "to buy",
+            "item": 1
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 2,
+        "fields": {
+            "tag": 1,
+            "value": "to buy",
+            "item": 2
+        }
+    },
+
+    {
+        "model": "items.itemtagvalue",
+        "pk": 3,
+        "fields": {
+            "tag": 2,
+            "value": "grocery",
+            "item": 2
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 4,
+        "fields": {
+            "tag": 2,
+            "value": "costco",
+            "item": 2
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 4,
+        "fields": {
+            "tag": 2,
+            "value": "costco",
+            "item": 1
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 5,
+        "fields": {
+            "tag": 2,
+            "value": "amazon",
+            "item": 2
+        }
+    },
+    {
+        "model": "items.itemtagvalue",
+        "pk": 5,
+        "fields": {
+            "tag": 2,
+            "value": "amazon",
+            "item": 1
+        }
     }
-  },
-  {
-    "model": "items.itemtype",
-    "pk": 2,
-    "fields": {
-      "name": "string"
-    }
-  },
-  {
-    "model": "items.iteminstance",
-    "pk": 1,
-    "fields": {
-        "value": "lists",
-        "item_type": 1
-    }
-  },
-  {
-    "model": "items.iteminstance",
-    "pk": 2,
-    "fields": {
-        "value": "demo list 1",
-        "item_type": 1,
-        "parent": 1
-    }
-  },
-  {
-    "model": "items.iteminstance",
-    "pk": 3,
-    "fields": {
-        "value": "demo item 1",
-        "item_type": 2,
-        "parent": 2
-    }
-  },
-  {
-    "model": "items.iteminstance",
-    "pk": 4,
-    "fields": {
-        "value": "demo item 2",
-        "item_type": 2,
-        "parent": 2
-    }
-  },
-  {
-    "model": "items.iteminstance",
-    "pk": 5,
-    "fields": {
-        "value": "demo list 2",
-        "item_type": 1,
-        "parent": 1
-    }
-  }
 ]

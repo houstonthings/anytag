@@ -1,0 +1,17 @@
+[
+  {
+    "model": "items.itemtag",
+    "pk": 1,
+    "fields": {
+      "key": "store"
+    }
+  },
+  {
+    "model": "items.itemtagvalue",
+    "pk": 1,
+    "fields": {
+      "tag": 1,
+      "value": "amazon"
+    }
+  }
+]
