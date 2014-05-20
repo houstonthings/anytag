@@ -4,3 +4,5 @@
 db.*
 .environment
 .idea
+bin
+lib
