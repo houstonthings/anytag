@@ -1,7 +1,6 @@
 .DS_Store
 *.pyc
-.ropeproject/
-.ropeproject/*
 *.db
 db.*
-
+.environment
+.idea
