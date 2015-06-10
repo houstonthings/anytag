@@ -1,5 +1,41 @@
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+from os.path import abspath, basename, dirname, join, normpath
+from sys import path
+
+########## PATH CONFIGURATION
+# Absolute filesystem path to the Django project directory:
+DJANGO_ROOT = dirname(dirname(abspath(__file__)))
+
+# Absolute filesystem path to the top-level project folder:
+SITE_ROOT = dirname(DJANGO_ROOT)
+
+# Site name:
+SITE_NAME = basename(DJANGO_ROOT)
+
+# Add our project to our pythonpath, this way we don't need to type our project
+# name in our dotted import paths:
+path.append(DJANGO_ROOT)
+########## END PATH CONFIGURATION
+
+########## MEDIA CONFIGURATION
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
+MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
+
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+MEDIA_URL = '/media/'
+########## END MEDIA CONFIGURATION
+
+
+########## STATIC FILE CONFIGURATION
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
+STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
+
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
+STATIC_URL = '/static/'
+
+# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+STATICFILES_DIRS = (
+    normpath(join(SITE_ROOT, 'static')),
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -12,11 +48,11 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-MEDIA_ROOT = BASE_DIR + '/media/'
-
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
-    BASE_DIR + '/templates/'
+    normpath(join(SITE_ROOT, 'templates')),
 )
+
 ALLOWED_HOSTS = []
 
 
@@ -57,7 +93,7 @@ WSGI_APPLICATION = 'anytag.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': normpath(join(SITE_ROOT, 'db.sqlite3')),
     }
 }
 
@@ -72,15 +108,3 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Absolute path to the directory static files should be collected to.
-# Don't put anything in this directory yourself; store your static files
-# in apps' "static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-    #'~/dev/projects/anytag/static',
-)
