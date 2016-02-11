@@ -8,6 +8,8 @@ WriteNow.UI = WriteNow.UI || {};
 
             $('#clear_list').on('click', clearList);
 
+            $('#delete_checked_items').on('click', deleteCheckedItems);
+
             runOnEnter($('#new_list'), createList);
 
             $('body')
@@ -64,6 +66,16 @@ WriteNow.UI = WriteNow.UI || {};
             $.ajax('clear/');
             $('#items').empty();
 
+            showListStatus();
+        }
+
+        function deleteCheckedItems(){
+            var checkedItems = $(':checked');
+            for (var i = 0; i<checkedItems.length; i++){
+                $.ajax('remove/' + checkedItems[i].id);
+                $(checkedItems[i]).parents('label').remove();
+            }
+            $container.parents('label').remove();
             showListStatus();
         }
 

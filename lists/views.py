@@ -80,8 +80,12 @@ def update_item(request, user_name, list_name, pk):
 def clear_list(request, user_name, list_name):
     user = get_or_create_user(user_name)
     list = get_or_create_list(user, list_name)
-    list.item_set.all().delete()
-    list.delete()
+    if request.POST['checkedItems'] == "true":
+        # TODO: Delete checked items
+
+    else:
+        list.item_set.all().delete()
+        list.delete()
     return HttpResponse(json.dumps({"status": "ok"}))
 
 
